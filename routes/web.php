@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::view('/help', 'help');
 Route::view('/faq', 'faq')->middleware('auth');
 Auth::routes();
 
