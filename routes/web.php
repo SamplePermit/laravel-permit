@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('operators','OperatorController')->middleware('auth');
 Route::view('/help', 'help');
 Route::view('/faq', 'faq')->middleware('auth');
 Auth::routes();

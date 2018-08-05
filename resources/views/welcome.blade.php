@@ -88,6 +88,14 @@
                     <a href="http://localhost/tcaa-permit/public/faq">FAQ</a>
                     <a href="https://github.com/SamplePermit/laravel-permit">GitHub</a>
                 </div>
+                <br/>
+                <br/>
+                <div class="links">
+                    <a href="http://localhost/tcaa-permit/public/operators">Operators</a>
+                    <a href="http://localhost/tcaa-permit/public/aircraft">Aircrafts</a>
+                    <a href="http://localhost/tcaa-permit/public/applications">Applications</a>
+                    <a href="http://localhost/tcaa-permit/public/permits">Permit</a>
+                </div>
             </div>
         </div>
     </body>
