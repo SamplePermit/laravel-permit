@@ -1,13 +1,6 @@
-<!-- index.blade.php -->
+@extends('layouts.app')
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Index Page</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-</head>
-<body>
+@section('content')
 <div class="container">
     <br />
     @if (\Session::has('success'))
@@ -50,5 +43,4 @@
         </tbody>
     </table>
 </div>
-</body>
-</html>
+@endsection
