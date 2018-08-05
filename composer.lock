@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5bca48e56bbf3a25645858fcab9c285",
+    "content-hash": "32c72925019b0ffe6d35f45c4d4c7f34",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -311,6 +311,50 @@
                 "parser"
             ],
             "time": "2018-03-08T01:11:30+00:00"
+        },
+        {
+            "name": "fanatique/php-fixed-length-file-parser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fanatique/php-fixed-length-file-parser.git",
+                "reference": "022bde1226818c3fcbbbab0f6dafe64005aafa5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fanatique/php-fixed-length-file-parser/zipball/022bde1226818c3fcbbbab0f6dafe64005aafa5d",
+                "reference": "022bde1226818c3fcbbbab0f6dafe64005aafa5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Fanatique": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Thomas",
+                    "email": "me@alexander-thomas.net",
+                    "homepage": "http://alexander-thomas.net"
+                }
+            ],
+            "description": "A parser class for handling fixed length text files in PHP",
+            "homepage": "https://github.com/fanatique/php-fixed-length-file-parser",
+            "keywords": [
+                "fixed length",
+                "parser",
+                "php",
+                "text"
+            ],
+            "time": "2014-04-29T10:15:33+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -3987,7 +4031,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "fanatique/php-fixed-length-file-parser": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
