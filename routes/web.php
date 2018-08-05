@@ -21,3 +21,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::view('/dashboard', 'dashboard')->middleware('auth');
+Route::resource('permits','PermitController')->middleware('auth');
