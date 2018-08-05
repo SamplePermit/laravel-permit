@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::view('/help', 'help');
+Route::resource('aircraft', 'AircraftController')->middleware('auth');
 Route::view('/faq', 'faq')->middleware('auth');
 Auth::routes();
 
