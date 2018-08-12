@@ -18,15 +18,13 @@ use Illuminate\Http\Request;
 Route::post('register', 'API\RegisterController@register');
 Route::middleware('auth:api')->group( function () {
     Route::resource('approvals', 'API\ApprovalController');
+    Route::resource('operators','API\OperatorController');
+    Route::resource('aircraft', 'API\AircraftController');
+    Route::resource('application', 'API\ApplicationController');
+    Route::resource('permit', 'API\ApplicationController');
 });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('operators','API\OperatorController');
-
-
-
-Route::resource('aircraft', 'API\AircraftController');
-Route::resource('application', 'API\ApplicationController');
