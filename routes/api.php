@@ -22,3 +22,4 @@ Route::middleware('auth:api')->group( function () {
     Route::resource('approvals', 'API\ApprovalController');
 });
 Route::resource('aircraft', 'API\AircraftController');
+Route::resource('application', 'API\ApplicationController');
