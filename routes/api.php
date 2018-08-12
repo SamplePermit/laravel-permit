@@ -17,4 +17,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('permit', 'API\PermitController');
+
+Route::middleware('auth:api')->group( function () {
+    Route::resource('approvals', 'API\ApprovalController');
+});
+Route::resource('aircraft', 'API\AircraftController');
+Route::resource('application', 'API\ApplicationController');

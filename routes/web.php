@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('approvals','ApprovalController')->middleware('auth');
 Route::resource('operators','OperatorController')->middleware('auth');
 Route::view('/help', 'help');
 Route::resource('aircraft', 'AircraftController')->middleware('auth');
