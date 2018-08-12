@@ -17,7 +17,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+<<<<<<< Updated upstream
 
 Route::middleware('auth:api')->group( function () {
     Route::resource('approvals', 'API\ApprovalController');
 });
+=======
+Route::resource('application', 'API\ApplicationController');
+>>>>>>> Stashed changes
