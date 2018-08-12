@@ -13,6 +13,13 @@ use Illuminate\Http\Request;
 |
 */
 
+
+
+Route::post('register', 'API\RegisterController@register');
+Route::middleware('auth:api')->group( function () {
+    Route::resource('approvals', 'API\ApprovalController');
+});
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -20,8 +27,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('operators','API\OperatorController');
 
 
-Route::middleware('auth:api')->group( function () {
-    Route::resource('approvals', 'API\ApprovalController');
-});
+
 Route::resource('aircraft', 'API\AircraftController');
 Route::resource('application', 'API\ApplicationController');
