@@ -18,3 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('operators','API\OperatorController');
+
+
+Route::middleware('auth:api')->group( function () {
+    Route::resource('approvals', 'API\ApprovalController');
+});
